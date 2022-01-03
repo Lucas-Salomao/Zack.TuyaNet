@@ -5,7 +5,7 @@
         public ushort H { get; private set; }
         public byte S { get; private set; }
         public byte V { get; private set; }
-        public HSV(ushort h, byte s, byte v)
+        public HSV(ushort h, ushort s, ushort v)
         {
             if(h<=0||h>360)
             {
