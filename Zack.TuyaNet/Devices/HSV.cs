@@ -3,8 +3,8 @@
     public record HSV
     {
         public ushort H { get; private set; }
-        public byte S { get; private set; }
-        public byte V { get; private set; }
+        public ushort S { get; private set; }
+        public ushort V { get; private set; }
         public HSV(ushort h, ushort s, ushort v)
         {
             if(h<=0||h>360)

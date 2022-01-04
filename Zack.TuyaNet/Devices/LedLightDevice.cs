@@ -30,7 +30,7 @@ public class LedLightDevice
     {
         return apiClient.SendCommandAsync(deviceId, "switch_led", false);
     }
-    public Task<bool> ChangeBrightnessAsync(string deviceId,byte value)
+    public Task<bool> ChangeBrightnessAsync(string deviceId,ushort value)
     {
         return apiClient.SendCommandAsync(deviceId, "bright_value_v2", value);
     }
