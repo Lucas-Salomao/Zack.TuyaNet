@@ -11,11 +11,11 @@
             {
                 throw new ArgumentOutOfRangeException(nameof(h));
             }
-            if (s <=0)
+            if (s >1000)
             {
                 throw new ArgumentOutOfRangeException(nameof(s));
             }
-            if (v <= 0)
+            if (v >1000)
             {
                 throw new ArgumentOutOfRangeException(nameof(v));
             }
